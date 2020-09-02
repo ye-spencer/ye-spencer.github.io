@@ -2,3 +2,9 @@ h3 {
 	color:#a0a0a0;
 	padding:30px;
 }
+
+a:visited {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
