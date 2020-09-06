@@ -1,7 +1,15 @@
-
+body {
+	background-color: #e7e6f5;
+	text-align: center;
+}
 
 h1{ /* name, title */
-	color:blue;
+	color:black;
+	background-color: lightblue;
+	text-align: center;
+	font-size: 60px;
+	margin: 0px 0px 0px 0px;
+	padding: 10px 100px 10px 100px;
 }
 
 
@@ -18,7 +26,8 @@ h4 { /* event labels */
 }
 
 h5 { /* points */
-	color:blue;
+	color:#15141f;
+	text-align: center;
 }
 
 p { /* event info */
