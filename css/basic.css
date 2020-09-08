@@ -1,7 +1,12 @@
-h3 {
-	color:#a0a0a0;
-	padding:30px;
+h1{ /* name, title */
+	color:black;
+	background-color: lightblue;
+	text-align: center;
+	font-size: 60px;
+	margin: 0px 0px 0px 0px;
+	padding: 10px 100px 10px 100px;
 }
+
 
 a:visited {
   color: blue;

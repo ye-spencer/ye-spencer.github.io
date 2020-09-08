@@ -12,17 +12,22 @@ h1{ /* name, title */
 	padding: 10px 100px 10px 100px;
 }
 
+#section {
+	color:black;
+	background-color: white
+}
+
 
 h2 { /* section headers */
-	color:blue;
+
 }
 
 h3 { /* runner linkes [mm] */
-	color:blue;
+
 }
 
 h4 { /* event labels */
-	color:blue;
+
 }
 
 h5 { /* points */
@@ -31,5 +36,5 @@ h5 { /* points */
 }
 
 p { /* event info */
-	color:blue;
+
 }
