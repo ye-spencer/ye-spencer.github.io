@@ -1,5 +1,5 @@
 body {
-	background-color: #e7e6f5;
+	background-color: #030f00;
 	text-align: center;
 }
 
@@ -14,7 +14,7 @@ h1{ /* name, title */
 
 #section {
 	color:black;
-	background-color: white
+	background-color: #e7e6f5;
 }
 
 
@@ -36,5 +36,5 @@ h5 { /* points */
 }
 
 p { /* event info */
-
+	padding: 10px 0px 10px 0px;
 }
