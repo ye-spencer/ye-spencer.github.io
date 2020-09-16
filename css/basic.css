@@ -1,5 +1,7 @@
 .title {
-
+	background-color: lightblue;
+	margin-top: 10;
+	font-size: 60px;
 }
 .vertline {
   border-left: 8px solid green;
