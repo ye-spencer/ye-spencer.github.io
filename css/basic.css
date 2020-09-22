@@ -1,8 +1,12 @@
 #title {
 	background-color: lightblue;
 	color: black;
-	margin-top: 10;
+	margin-top: 10px;
 	font-size: 60px;
+}
+#footer{
+	background-color: #a6a4a3;
+	margin-bottom: 10px
 }
 .vertline {
   border-left: 8px solid green;
