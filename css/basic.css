@@ -1,7 +1,6 @@
 * {
 	font-family:courier;
-	margin-left: 0px;
-	padding-left: 0px;
+
 }
 #title {
 	background-color: lightblue;
@@ -17,6 +16,9 @@
 }
 #navi{
 	background-color: #a6a4b0;
+}
+#basicDiv{
+	padding:15px;
 }
 #footerimage{
 	padding:5px;
