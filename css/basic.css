@@ -1,14 +1,13 @@
 * {
 	font-family:courier;
+	margin: 0px;
 }
 #title {
 	background-color: lightblue;
 	color: black;
 	font-size: 60px;
 	text-align: center;
-	margin: 0px;
-	padding: 0px;
-	width: 110%;
+	width: 100%;
 }
 #footer{
 	background-color: #a6a4a3;
