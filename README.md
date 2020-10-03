@@ -6,4 +6,4 @@ Personal Website
 
 One day I'll find out exactly why I have this
 
-man this is kinda actually fun
+man this is kinda fun
