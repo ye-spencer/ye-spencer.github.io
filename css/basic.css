@@ -25,9 +25,11 @@
 	background-color: #a6a4a3;
 	margin-bottom: 20px;
 	padding:10px;
+	align-self: flex-end;
 }
 #navi{
 	background-color: #a6a4b0;
+	align-self: flex-end;
 }
 #basicDiv{
 	padding:20px;
@@ -35,4 +37,5 @@
 #footerimage{
 	padding:5px;
 }
+
 
