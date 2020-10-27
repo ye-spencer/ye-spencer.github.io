@@ -10,8 +10,8 @@
 	width: 100%;
 }
 #navButton {
-	background-color:#404041;
-	margin-right:120px;
+	background-color: #404041;
+	margin-right: 120px;
 	border: none;
 	color: black;
 	padding: 15px 32px;
@@ -32,10 +32,10 @@
 	align-self: flex-end;
 }
 #basicDiv{
-	padding:25px;
+	padding: 25px;
 }
 #footerimage{
-	padding:5px;
+	padding: 5px;
 }
 
 
