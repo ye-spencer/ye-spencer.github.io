@@ -1,5 +1,6 @@
 #achv{
-	border-width: 2px
+	border-width: 2px;
+	padding: 12px 2px;
 }
 #nocenthead {
 	horizontal-align:right;
