@@ -15,15 +15,18 @@ function drawBall()
 	ctx.closePath();
 }
 
-function draw() {
+function draw() 
+{
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	drawBall();
 
-	if(x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
-	dx = -dx;
+	if(x + dx > canvas.width - ballRadius || x + dx < ballRadius) 
+	{
+		dx = -dx;
 	}
-	if(y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
-	dy = -dy;
+	if(y + dy > canvas.height - ballRadius || y + dy < ballRadius) 
+	{
+		dy = -dy;
 	}
 
 	x += dx;
