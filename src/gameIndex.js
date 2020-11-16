@@ -1,7 +1,7 @@
 var canvas = document.getElementById("gameCanvas");
 var ctx = canvas.getContext("2d");
 var ballRadius = 10;
-var x = canvas.width/2;
+var x = canvas.width / 2;
 var y = canvas.height-30;
 var dx = 2;
 var dy = -2;
@@ -10,6 +10,7 @@ var paddleWidth = 75;
 var paddleX = (canvas.width-paddleWidth)/2;
 var rightPressed = false;
 var leftPressed = false;
+const paddleSpeed = 7;
 
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
@@ -71,14 +72,14 @@ function draw()
 
 	if(rightPressed) 
 	{
-		paddleX += 7;
+		paddleX += paddleSpeed;
 		if (paddleX + paddleWidth > canvas.width){
 			paddleX = canvas.width - paddleWidth;
 		}
 	}
 	else if(leftPressed) 
 	{
-		paddleX -= 7;
+		paddleX -= paddleSpeed;
 		if (paddleX < 0)
 		{
 			paddleX = 0;
