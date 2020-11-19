@@ -7,7 +7,7 @@ var dx = 2;
 var dy = -2;
 var paddleHeight = 10;
 var paddleWidth = 75;
-var paddleX = (canvas.width-paddleWidth)/2;
+var paddleX = (canvas.width - paddleWidth) / 2;
 var rightPressed = false;
 var leftPressed = false;
 const paddleSpeed = 7;
@@ -15,7 +15,7 @@ const paddleSpeed = 7;
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
 
-function keyDownHandler(e) 
+function keyDownHandler(key) 
 {
 	if(e.key == "Right" || e.key == "ArrowRight") 
 	{
@@ -27,7 +27,7 @@ function keyDownHandler(e)
 	}
 }
 
-function keyUpHandler(e) {
+function keyUpHandler(key) {
 	if(e.key == "Right" || e.key == "ArrowRight") 
 	{
 		rightPressed = false;
@@ -50,7 +50,7 @@ function drawPaddle()
 {
 	ctx.beginPath();
 	ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
-	ctx.fillStyle = "#0095DD";
+	ctx.fillStyle = "#0099DD";
 	ctx.fill();
 	ctx.closePath();
 }
