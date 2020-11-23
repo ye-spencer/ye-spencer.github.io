@@ -75,9 +75,16 @@ function draw()
 		{
 			dy = -dy;
 		}
+
 		alert("game over loser")
 		documet.location.reload()
-		clearInterval(interval)
+		//clearInterval(interval)
+		x = canvas.width / 2;
+		y = canvas.height-30;
+		dx = 2;
+		dy = -2;
+		paddleX = (canvas.width - paddleWidth) / 2;
+
 	}
 
 	if(rightPressed) 
