@@ -27,7 +27,8 @@ function keyDownHandler(key)
 	}
 }
 
-function keyUpHandler(key) {
+function keyUpHandler(key) 
+{
 	if(e.key == "Right" || e.key == "ArrowRight") 
 	{
 		rightPressed = false;
@@ -69,7 +70,7 @@ function draw()
 	{
 		dy = -dy;
 	}
-	else if (y + dy > canvas.height-ballRadius)
+	else if (y + dy > canvas.height - ballRadius)
 	{
 		if(x > paddleX && x < paddleX + paddleWidth) 
 		{
