@@ -78,7 +78,7 @@ function draw()
 		}
 
 		alert("game over loser")
-		documet.location.reload()
+		//documet.location.reload()
 		//clearInterval(interval)
 		x = canvas.width / 2;
 		y = canvas.height-30;
