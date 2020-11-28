@@ -27,8 +27,7 @@ function keyDownHandler(key)
 	}
 }
 
-function keyUpHandler(key) 
-{
+function keyUpHandler(key) {
 	if(e.key == "Right" || e.key == "ArrowRight") 
 	{
 		rightPressed = false;
@@ -66,26 +65,9 @@ function draw()
 	{
 		dx = -dx;
 	}
-	if(y + dy < ballRadius) 
+	if(y + dy > canvas.height-ballRadius || y + dy < ballRadius) 
 	{
 		dy = -dy;
-	}
-	else if (y + dy > canvas.height - ballRadius)
-	{
-		if(x > paddleX && x < paddleX + paddleWidth) 
-		{
-			dy = -dy;
-		}
-
-		alert("game over loser")
-		//documet.location.reload()
-		//clearInterval(interval)
-		x = canvas.width / 2;
-		y = canvas.height-30;
-		dx = 2;
-		dy = -2;
-		paddleX = (canvas.width - paddleWidth) / 2;
-
 	}
 
 	if(rightPressed) 
@@ -108,4 +90,4 @@ function draw()
 	y += dy;
 }
 
-var interval = setInterval(draw, 10);
+setInterval(draw, 10);
