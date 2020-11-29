@@ -61,11 +61,11 @@ function draw()
 	drawBall();
 	drawPaddle();
 
-	if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) 
+	if(x + dx > canvas.width - ballRadius || x + dx < ballRadius) 
 	{
 		dx = -dx;
 	}
-	if(y + dy > canvas.height-ballRadius || y + dy < ballRadius) 
+	if(y + dy > canvas.height - ballRadius || y + dy < ballRadius) 
 	{
 		dy = -dy;
 	}
@@ -73,7 +73,8 @@ function draw()
 	if(rightPressed) 
 	{
 		paddleX += paddleSpeed;
-		if (paddleX + paddleWidth > canvas.width){
+		if (paddleX + paddleWidth > canvas.width)
+		{
 			paddleX = canvas.width - paddleWidth;
 		}
 	}
