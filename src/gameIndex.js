@@ -25,6 +25,7 @@ function keyDownHandler(key)
 	{
 		leftPressed = true;
 	}
+	document.write("Right Handled");
 }
 
 function keyUpHandler(key) {
@@ -36,6 +37,7 @@ function keyUpHandler(key) {
 	{
 		leftPressed = false;
 	}
+	document.write("Left Handled");
 }
 
 function drawBall() 
