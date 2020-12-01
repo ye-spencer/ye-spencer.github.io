@@ -17,11 +17,11 @@ document.addEventListener("keyup", keyUpHandler, false);
 
 function keyDownHandler(key) 
 {
-	if(e.key == "Right" || e.key == "ArrowRight") 
+	if(key == "Right" || key == "ArrowRight") 
 	{
 		rightPressed = true;
 	}
-	else if(e.key == "Left" || e.key == "ArrowLeft") 
+	else if(key == "Left" || key == "ArrowLeft") 
 	{
 		leftPressed = true;
 	}
@@ -29,11 +29,11 @@ function keyDownHandler(key)
 }
 
 function keyUpHandler(key) {
-	if(e.key == "Right" || e.key == "ArrowRight") 
+	if(key == "Right" || key == "ArrowRight") 
 	{
 		rightPressed = false;
 	}
-	else if(e.key == "Left" || e.key == "ArrowLeft") 
+	else if(key == "Left" || key == "ArrowLeft") 
 	{
 		leftPressed = false;
 	}
