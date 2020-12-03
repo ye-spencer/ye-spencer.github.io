@@ -74,6 +74,7 @@ function draw()
 
 	if(rightPressed) 
 	{
+		document.write("Right Move")
 		paddleX += paddleSpeed;
 		if (paddleX + paddleWidth > canvas.width)
 		{
@@ -82,6 +83,7 @@ function draw()
 	}
 	else if(leftPressed) 
 	{
+		document.write("Left Move")
 		paddleX -= paddleSpeed;
 		if (paddleX < 0)
 		{
