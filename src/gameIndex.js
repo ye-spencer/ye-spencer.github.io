@@ -20,10 +20,12 @@ function keyDownHandler(key)
 	if(key == "Right" || key == "ArrowRight") 
 	{
 		rightPressed = true;
+		document.write("Right True");
 	}
 	else if(key == "Left" || key == "ArrowLeft") 
 	{
 		leftPressed = true;
+		document.write("Left True");
 	}
 	document.write("Right Handled");
 }
