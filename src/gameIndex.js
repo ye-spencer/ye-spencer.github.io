@@ -17,7 +17,7 @@ document.addEventListener("keyup", keyUpHandler, false);
 
 function keyDownHandler(key) 
 {
-	if(key == "Right" || key == "ArrowRight") 
+	if(key == "Right" || key == "ArrowRight")  /*There conditionals are not being called */
 	{
 		rightPressed = true;
 		document.write("Right True");
@@ -27,7 +27,7 @@ function keyDownHandler(key)
 		leftPressed = true;
 		document.write("Left True");
 	}
-	document.write("Right Handled");
+	/*document.write("Right Handled");*/
 }
 
 function keyUpHandler(key) {
@@ -39,7 +39,7 @@ function keyUpHandler(key) {
 	{
 		leftPressed = false;
 	}
-	document.write("Left Handled");
+	/*document.write("Left Handled");*/
 }
 
 function drawBall() 
