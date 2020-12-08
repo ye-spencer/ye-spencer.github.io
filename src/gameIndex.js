@@ -27,6 +27,7 @@ function keyDownHandler(key)
 		leftPressed = true;
 		document.write("Left True");
 	}
+	document.write(key);
 	/*document.write("Right Handled");*/
 }
 
