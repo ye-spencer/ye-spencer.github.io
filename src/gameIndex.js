@@ -17,21 +17,22 @@ document.addEventListener("keyup", keyUpHandler, false);
 
 function keyDownHandler(key) 
 {
-	if(key == "Right" || key == "ArrowRight")  /*There conditionals are not being called */
+	if(key.key == "Right" || key.key == "ArrowRight")  /*There conditionals are not being called */
 	{
 		rightPressed = true;
 		document.write("Right True");
 	}
-	else if(key == "Left" || key == "ArrowLeft") 
+	else if(key.key == "Left" || key.key == "ArrowLeft") 
 	{
 		leftPressed = true;
 		document.write("Left True");
 	}
-	document.write(key); /* it is an object */
+	document.write(key.key); /* it is an object */
 	/*document.write("Right Handled");*/
 }
 
-function keyUpHandler(key) {
+function keyUpHandler(key) 
+{
 	if(key == "Right" || key == "ArrowRight") 
 	{
 		rightPressed = false;
