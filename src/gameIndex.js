@@ -20,14 +20,14 @@ function keyDownHandler(key)
 	if(key.key == "Right" || key.key == "ArrowRight")  /*There conditionals are not being called */
 	{
 		rightPressed = true;
-		document.write("Right True");
+		console.log("Right True");
 	}
 	else if(key.key == "MoveLeft" || key.key == "ArrowLeft") 
 	{
 		leftPressed = true;
-		document.write("Left True");
+		console.log("Left True");
 	}
-	document.write(key.key); /* it is an object */
+	console.log(key.key); /* it is an object */
 	/*document.write("Right Handled");*/
 }
 
@@ -37,7 +37,7 @@ function keyUpHandler(key)
 	{
 		rightPressed = false;
 	}
-	else if(key == "Left" || key == "ArrowLeft") 
+	else if(key == "MoveLeft" || key == "ArrowLeft") 
 	{
 		leftPressed = false;
 	}
@@ -47,7 +47,7 @@ function keyUpHandler(key)
 function drawBall() 
 {
 	ctx.beginPath();
-	ctx.arc(x, y, ballRadius, 0, Math.PI*2);
+	ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
 	ctx.fillStyle = "#0099DD";
 	ctx.fill();
 	ctx.closePath();
