@@ -28,7 +28,6 @@ function keyDownHandler(key)
 		console.log("Left True");
 	}
 	console.log(key.key); /* it is an object */
-	/*document.write("Right Handled");*/
 }
 
 function keyUpHandler(key) 
@@ -41,7 +40,6 @@ function keyUpHandler(key)
 	{
 		leftPressed = false;
 	}
-	/*document.write("Left Handled");*/
 }
 
 function drawBall() 
@@ -78,7 +76,6 @@ function draw()
 
 	if(rightPressed) 
 	{
-		document.write("Right Move")
 		paddleX += paddleSpeed;
 		if (paddleX + paddleWidth > canvas.width)
 		{
@@ -87,7 +84,6 @@ function draw()
 	}
 	else if(leftPressed) 
 	{
-		document.write("Left Move")
 		paddleX -= paddleSpeed;
 		if (paddleX < 0)
 		{
