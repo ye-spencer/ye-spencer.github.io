@@ -22,7 +22,7 @@ function keyDownHandler(key)
 		rightPressed = true;
 		console.log("Right True");
 	}
-	else if(key.key == "MoveLeft" || key.key == "ArrowLeft") 
+	else if (key.key == "MoveLeft" || key.key == "ArrowLeft") 
 	{
 		leftPressed = true;
 		console.log("Left True");
@@ -32,11 +32,11 @@ function keyDownHandler(key)
 
 function keyUpHandler(key) 
 {
-	if(key == "MoveRight" || key == "ArrowRight") 
+	if(key.key == "Right" || key.key == "ArrowRight") 
 	{
 		rightPressed = false;
 	}
-	else if(key == "MoveLeft" || key == "ArrowLeft") 
+	else if (key.key == "MoveLeft" || key.key == "ArrowLeft") 
 	{
 		leftPressed = false;
 	}
