@@ -69,9 +69,15 @@ function draw()
 	{
 		dx = -dx;
 	}
-	if(y + dy > canvas.height - ballRadius || y + dy < ballRadius) 
+	if(x > paddleX && x < paddleX + paddleWidth) 
 	{
 		dy = -dy;
+	}
+	else 
+	{
+		alert("GAME OVER");
+		document.location.reload();
+		clearInterval(interval);
 	}
 
 	if(rightPressed) 
