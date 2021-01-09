@@ -87,6 +87,8 @@ function draw()
 			//clearInterval(interval);
 			x = Math.floor(Math.random() * canvas.width) + ballRadius;
 			y = Math.floor(Math.random() * canvas.height) + ballRadius;
+			dx = Math.floor(Math.random() * 2) + 1;
+			dy = Math.floor(Math.random() * 2) + 1;
 		}
 	}
 
