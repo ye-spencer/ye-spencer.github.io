@@ -78,7 +78,7 @@ function draw()
 	{
 		if(x > paddleX && x < paddleX + paddleWidth) 
 		{
-			dy = -dy;
+			dy = -dy * 1.1;
 		}
 		else 
 		{
