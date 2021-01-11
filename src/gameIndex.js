@@ -82,9 +82,7 @@ function draw()
 		}
 		else 
 		{
-			alert("GAME OVER");
-			//document.location.reload();
-			//clearInterval(interval);
+			alert("GAME OVER \n CLICK 'OKAY' TO PLAY AGAIN");
 			x = Math.floor(Math.random() * canvas.width) + ballRadius;
 			y = Math.floor(Math.random() * canvas.height) + ballRadius;
 			dx = Math.floor(Math.random() * 2) + 1;
