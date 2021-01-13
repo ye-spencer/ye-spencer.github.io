@@ -53,7 +53,7 @@ function drawBricks()
 
 function keyDownHandler(key) 
 {
-	if(key.key == "Right" || key.key == "ArrowRight")  /*There conditionals are not being called */
+	if(key.key == "Right" || key.key == "ArrowRight")
 	{
 		rightPressed = true;
 		console.log("Right True");
@@ -63,7 +63,7 @@ function keyDownHandler(key)
 		leftPressed = true;
 		console.log("Left True");
 	}
-	console.log(key.key); /* it is an object */
+	console.log(key.key);
 }
 
 function keyUpHandler(key) 
