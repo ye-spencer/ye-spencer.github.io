@@ -24,6 +24,8 @@ console.log("program started")
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
 
+var points = 0;
+
 var bricks = [];
 for(var c = 0; c < brickColumnCount; c++) 
 {
@@ -115,6 +117,7 @@ function draw()
 		if(x > paddleX && x < paddleX + paddleWidth) 
 		{
 			dy = -dy * 1.1;
+			points++;
 		}
 		else 
 		{
@@ -123,6 +126,7 @@ function draw()
 			y = Math.floor(Math.random() * canvas.height) + ballRadius;
 			dx = Math.floor(Math.random() * 2) + 1;
 			dy = Math.floor(Math.random() * 2) + 1;
+			points = 0;
 		}
 	}
 
