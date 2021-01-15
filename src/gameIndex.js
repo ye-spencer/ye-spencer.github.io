@@ -96,12 +96,18 @@ function drawPaddle()
 	ctx.fill();
 	ctx.closePath();
 }
-
+function drawScore() 
+{
+	ctx.font = "16px Arial";
+	ctx.fillStyle = "#0095DD";
+	ctx.fillText("Score: " + score, 8, 20);
+}
 function draw() 
 {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	drawBall();
 	drawPaddle();
+	drawScore();
 
 	if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) 
 	{
