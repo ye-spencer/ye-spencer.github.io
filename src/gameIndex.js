@@ -100,7 +100,7 @@ function drawScore()
 {
 	ctx.font = "16px Arial";
 	ctx.fillStyle = "#000000";
-	ctx.fillText("Score: " + points, 8, 20);
+	ctx.fillText("Score: " + points, 8, 200);
 	ctx.fillText("Speed: " + Math.sqrt(Math.pow(dx, 2) + Math.sqrt(Math.pow(dy, 2))), 8, 40);
 }
 function draw() 
