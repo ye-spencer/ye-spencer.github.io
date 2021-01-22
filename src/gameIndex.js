@@ -45,7 +45,7 @@ function drawBricks()
 			bricks[c][r].x = 0;
 			bricks[c][r].y = 0;
 			ctx.beginPath();
-			ctx.rect(0, 0, brickWidth, brickHeight);
+			ctx.rect(c * brickWidth + 10, r * brickHeight + 3, brickWidth, brickHeight);
 			ctx.fillStyle = "#0095DD";
 			ctx.fill();
 			ctx.closePath();
@@ -115,7 +115,6 @@ function draw()
 	{
 		dx = -dx;
 	}
-	
 	if (y + dy < ballRadius)
 	{
 		dy = -dy;
@@ -124,7 +123,6 @@ function draw()
 	{
 		if(x > paddleX && x < paddleX + paddleWidth) 
 		{
-			dy = -dy * 1.1;
 			points++;
 		}
 		else 
@@ -157,6 +155,9 @@ function draw()
 
 	x += dx;
 	y += dy;
+
+	dy = dy * 1.01;
+	dx = dx * 1.01;
 }
 
 setInterval(draw, 12);
