@@ -109,7 +109,7 @@ function draw()
 	drawBall();
 	drawPaddle();
 	drawScore();
-	//drawBricks();
+	drawBricks();
 
 	if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) 
 	{
@@ -156,8 +156,8 @@ function draw()
 	x += dx;
 	y += dy;
 
-	dy = dy * 1.01;
-	dx = dx * 1.01;
+	dy = dy * 1.001;
+	dx = dx * 1.001;
 }
 
 setInterval(draw, 12);
