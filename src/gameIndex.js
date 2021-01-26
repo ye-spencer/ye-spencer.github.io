@@ -156,8 +156,8 @@ function draw()
 	x += dx;
 	y += dy;
 
-	dy += Math.abs(dy) / dy * 0.01;
-	dx += Math.abs(dx) / dx * 0.01;
+/*	dy += Math.abs(dy) / dy * 0.01;
+	dx += Math.abs(dx) / dx * 0.01;*/
 }
 
 setInterval(draw, 12);
