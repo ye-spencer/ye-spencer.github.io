@@ -24,6 +24,10 @@ console.log("program started")
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
 
+/*
+ERRORS: ending game not working
+*/
+
 var points = 0;
 
 var bricks = [];
