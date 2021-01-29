@@ -134,8 +134,6 @@ function draw()
 			alert("GAME OVER \n CLICK 'OKAY' TO PLAY AGAIN");
 			x = Math.floor(Math.random() * canvas.width) + ballRadius;
 			y = Math.floor(Math.random() * canvas.height) + ballRadius;
-			dx = Math.floor(Math.random() * 2) + 1;
-			dy = Math.floor(Math.random() * 2) + 1;
 			points = 0;
 		}
 	}
@@ -160,8 +158,6 @@ function draw()
 	x += dx;
 	y += dy;
 
-/*	dy += Math.abs(dy) / dy * 0.01;
-	dx += Math.abs(dx) / dx * 0.01;*/
 }
 
 setInterval(draw, 12);
