@@ -128,6 +128,7 @@ function draw()
 		if(x > paddleX && x < paddleX + paddleWidth) 
 		{
 			points++;
+			dy = -dy;
 		}
 		else 
 		{
