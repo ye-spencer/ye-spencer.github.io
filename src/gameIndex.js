@@ -158,21 +158,21 @@ function draw()
 		}
 	}
 
-	if (Math.random() < 0.6)
+	if (Math.random() < 0.55)
 	{
-		dx += Math.abs(dx)/dx * 0.01
+		dx += Math.abs(dx)/dx * 0.001
 	}
 	else
 	{
-		dx -= Math.abs(dx)/dx * 0.01
+		dx -= Math.abs(dx)/dx * 0.001
 	}
-	if (Math.random() < 0.6)
+	if (Math.random() < 0.55)
 	{
-		dy += Math.abs(dy)/dy * 0.01
+		dy += Math.abs(dy)/dy * 0.001
 	}
 	else
 	{
-		dy -= Math.abs(dy)/dy * 0.01
+		dy -= Math.abs(dy)/dy * 0.001
 	}
 	x += dx;
 	y += dy;
