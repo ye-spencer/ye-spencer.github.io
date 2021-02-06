@@ -19,6 +19,8 @@ var brickPadding = 10;
 var brickOffsetTop = 30;
 var brickOffsetLeft = 30;
 
+var topScore = 0;
+
 const paddleSpeed = 7;
 console.log("program started")
 document.addEventListener("keydown", keyDownHandler, false);
@@ -38,6 +40,24 @@ for(var c = 0; c < brickColumnCount; c++)
 	{
 		bricks[c][r] = { x: 0, y: 0 };
 	}
+}
+
+function readTextFile(file)
+{
+	var rawFile = new XMLHttpRequest();
+	rawFile.open("GET", file, false);
+	rawFile.onreadystatechange = function ()
+	{
+		if(rawFile.readyState === 4)
+		{
+			if(rawFile.status === 200 || rawFile.status == 0)
+			{
+				topScore = Number(rawFile.responseText);
+				alert(allText);
+			}
+		}
+	}
+	rawFile.send(null);
 }
 
 function drawBricks() 
@@ -137,6 +157,7 @@ function draw()
 			y = Math.floor(Math.random() * canvas.height) + ballRadius;
 			dx = 2;
 			dy = -2;
+			if (points > )
 			points = 0;
 		}
 	}
