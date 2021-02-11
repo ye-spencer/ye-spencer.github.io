@@ -27,7 +27,7 @@ document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
 
 /*
-ERRORS: ending game not working
+ERRORS: NONE
 */
 
 var points = 0;
@@ -146,7 +146,6 @@ function draw()
 	else if (y + dy > canvas.height - ballRadius) 
 	{
 		if(x > paddleX && x < paddleX + paddleWidth) 
-		{
 			points++;
 			dy = -dy;
 		}
@@ -157,7 +156,10 @@ function draw()
 			y = Math.floor(Math.random() * canvas.height) + ballRadius;
 			dx = 2;
 			dy = -2;
-			if (points > )
+			if (points > topScore)
+			{
+				topScore = points
+			}
 			points = 0;
 		}
 	}
