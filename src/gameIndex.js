@@ -133,7 +133,6 @@ function draw()
 	drawBall();
 	drawPaddle();
 	drawScore();
-	//drawBricks();
 
 	if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) 
 	{
@@ -162,6 +161,8 @@ function draw()
 				topScore = points
 			}
 			points = 0;
+			rightPressed = false;
+			leftPressed = false;
 		}
 	}
 
