@@ -11,14 +11,6 @@ var paddleX = (canvas.width - paddleWidth) / 2;
 var rightPressed = false;
 var leftPressed = false;
 
-var brickRowCount = 3;
-var brickColumnCount = 5;
-var brickWidth = 75;
-var brickHeight = 20;
-var brickPadding = 10;
-var brickOffsetTop = 30;
-var brickOffsetLeft = 30;
-
 var topScore = 0;
 
 const paddleSpeed = 7;
@@ -29,18 +21,13 @@ document.addEventListener("keyup", keyUpHandler, false);
 /*
 ERRORS: NONE
 */
+/*
+IDEAS:
+Have a global best score
+*/
 
 var points = 0;
 
-var bricks = [];
-for(var c = 0; c < brickColumnCount; c++) 
-{
-	bricks[c] = [];
-	for(var r = 0; r < brickRowCount; r++) 
-	{
-		bricks[c][r] = { x: 0, y: 0 };
-	}
-}
 
 function readTextFile(file)
 {
@@ -58,23 +45,6 @@ function readTextFile(file)
 		}
 	}
 	rawFile.send(null);
-}
-
-function drawBricks() 
-{
-	for(var c = 0; c < brickColumnCount; c++) 
-	{
-		for(var r = 0; r < brickRowCount; r++) 
-		{
-			bricks[c][r].x = 0;
-			bricks[c][r].y = 0;
-			ctx.beginPath();
-			ctx.rect(c * brickWidth + 10, r * brickHeight + 3, brickWidth, brickHeight);
-			ctx.fillStyle = "#0095DD";
-			ctx.fill();
-			ctx.closePath();
-		}
-	}
 }
 
 function keyDownHandler(key) 
