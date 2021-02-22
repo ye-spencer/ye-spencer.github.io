@@ -12,6 +12,7 @@ var rightPressed = false;
 var leftPressed = false;
 
 var topScore = 0;
+var lastSpeed = 0;
 
 const paddleSpeed = 7;
 console.log("program started")
@@ -95,7 +96,8 @@ function drawScore()
 	ctx.font = "16px Arial";
 	ctx.fillStyle = "#000000";
 	ctx.fillText("Score: " + points, 8, 200);
-	ctx.fillText("Speed: " + Math.sqrt(Math.pow(dx, 2) + Math.sqrt(Math.pow(dy, 2))), 8, 40);
+	lastSpeed = Math.max(lastSpeed, Math.sqrt(Math.pow(dx, 2) + Math.sqrt(Math.pow(dy, 2))))
+	ctx.fillText("Speed: " + lastSpeed.toFixed(2), 8, 40);
 }
 function draw() 
 {
