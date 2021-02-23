@@ -133,6 +133,7 @@ function draw()
 				topScore = points
 			}
 			points = 0;
+			lastSpeed = 0;
 			rightPressed = false;
 			leftPressed = false;
 		}
