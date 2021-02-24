@@ -123,7 +123,7 @@ function draw()
 		}
 		else 
 		{
-			alert("GAME OVER \n CLICK 'OKAY' TO PLAY AGAIN");
+			alert("GAME OVER \n CLICK 'OK' TO PLAY AGAIN");
 			x = Math.floor(Math.random() * canvas.width) + ballRadius;
 			y = Math.floor(Math.random() * canvas.height) + ballRadius;
 			dx = 2;
@@ -158,19 +158,19 @@ function draw()
 
 	if (Math.random() < 0.55)
 	{
-		dx += Math.abs(dx)/dx * 0.001
+		dx += Math.abs(dx) / dx * 0.001
 	}
 	else
 	{
-		dx -= Math.abs(dx)/dx * 0.001
+		dx -= Math.abs(dx) / dx * 0.001
 	}
 	if (Math.random() < 0.55)
 	{
-		dy += Math.abs(dy)/dy * 0.001
+		dy += Math.abs(dy) / dy * 0.001
 	}
 	else
 	{
-		dy -= Math.abs(dy)/dy * 0.001
+		dy -= Math.abs(dy) / dy * 0.001
 	}
 	x += dx;
 	y += dy;
