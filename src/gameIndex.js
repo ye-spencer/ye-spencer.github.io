@@ -156,7 +156,7 @@ function draw()
 		}
 	}
 
-	if (Math.random() < 0.55)
+	if (Math.random() < 0.56)
 	{
 		dx += Math.abs(dx) / dx * 0.001
 	}
@@ -164,7 +164,7 @@ function draw()
 	{
 		dx -= Math.abs(dx) / dx * 0.001
 	}
-	if (Math.random() < 0.55)
+	if (Math.random() < 0.56)
 	{
 		dy += Math.abs(dy) / dy * 0.001
 	}
