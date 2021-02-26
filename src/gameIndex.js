@@ -177,4 +177,4 @@ function draw()
 
 }
 
-setInterval(draw, 12);
+setInterval(draw, 10);
