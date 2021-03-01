@@ -29,25 +29,6 @@ Have a global best score
 
 var points = 0;
 
-
-function readTextFile(file)
-{
-	var rawFile = new XMLHttpRequest();
-	rawFile.open("GET", file, false);
-	rawFile.onreadystatechange = function ()
-	{
-		if(rawFile.readyState === 4)
-		{
-			if(rawFile.status === 200 || rawFile.status == 0)
-			{
-				topScore = Number(rawFile.responseText);
-				alert(allText);
-			}
-		}
-	}
-	rawFile.send(null);
-}
-
 function keyDownHandler(key) 
 {
 	if(key.key == "Right" || key.key == "ArrowRight")
