@@ -1,0 +1,28 @@
+body {
+  background-color: lightblue;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+div {
+	padding: 60px
+}
+
+.header 
+{
+  padding: 60px;
+  text-align: center;
+  background: #000000;
+  color: white;
+  font-size: 30px;
+
+}
+
+.directionButton
+{
+	padding: 20px;
+	text-align: center
+	background: #100000;
+	color:white;
+	font-size: 10px;
+	margin:0px
+}

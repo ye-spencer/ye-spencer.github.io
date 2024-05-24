@@ -3,9 +3,34 @@
 	<head>
 		<title> Spencer Ye </title>
 		<link rel="icon" type="image/x-icon" href="/imgs/favicon_personal-data_by-gungyoga04.png">
+		<link rel="stylesheet" href="css/basic_page.css">
 	</head>
+
+	<div class="header">
+	  <h1>Spencer Ye</h1>
+
+	  <p>Computer Science Student-Athlete at Johns Hopkins University</p>
+
+	  <button id="aboutMeButton", class="directionButton", onClick="document.getElementById('aboutMe').animate({ scrollTop: 0 }, 10)">
+	  	<p>About Me</p>
+	  </button>
+	  <button id="projectsButton", class="directionButton", onClick="document.getElementById('projects').scrollIntoView();">
+	  	<p>My Projects</p>
+	  </button>
+	</div>
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 	<body>
-		<p> Hello! This is a work in progress </p>
+		<div id="aboutMe">
+			<p> This is my about me </p>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+		<div id="projects">`
+			<p> These are my projects </p>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
 	</body>
 
 </html>
