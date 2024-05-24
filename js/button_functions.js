@@ -1,18 +1,16 @@
 function buttonJumpToElement()
 {
-	//var button_section = getAttribute('data-name');
-	console.log("this")
-    //this.document.getElementById("aboutMe").scrollIntoView();
-    this.style.backgroundColor = "red";
+	var button_section = this.getAttribute('data-name');
+	var parent_document = this;
+	while (!(parent_document instanceof HTMLDocument))
+	{
+		parent_document = parent_document.parentNode;
+	}
+    parent_document.getElementById(button_section).scrollIntoView();
 }
-console.log(this);
+
 var elements = this.document.getElementsByClassName("directionButton");
-console.log(elements);
-console.log(elements)
-var length = elements.length;
-console.log(length)
 for (let i = 0; i < elements.length; i++) 
 {
-	console.log(i)
 	elements[i].addEventListener("click", buttonJumpToElement);
 }
