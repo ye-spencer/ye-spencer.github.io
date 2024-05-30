@@ -12,8 +12,18 @@ body {
   font-size: 30px;
   width: 100%;
   top-margin: 10px;
-  min-width: 100vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
+}
+
+#stickyNavigator
+{
+	width: 100%;
+	text-align: center;
+	background-color: black;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .directionButton
@@ -24,4 +34,11 @@ body {
 	color:black;
 	font-size: 10px;
 	margin:0px
+}
+
+.sticky 
+{
+  position: fixed;
+  top: 0px;
+  width: 100%;
 }
