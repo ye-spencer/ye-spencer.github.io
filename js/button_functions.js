@@ -8,4 +8,12 @@ $(document).ready(function()
   {
     $("#projects")[0].scrollIntoView({behavior: "smooth"});
   });
+  $("#blogButton").click(function()
+  {
+    $("#blog")[0].scrollIntoView({behavior: "smooth"});
+  });
+  $("#contactButton").click(function()
+  {
+    $("#contact")[0].scrollIntoView({behavior: "smooth"});
+  });
 });
