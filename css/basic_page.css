@@ -28,6 +28,26 @@ body {
 	height:50px;
 }
 
+#contact
+{
+	height:250px;
+}
+
+.contactHeader
+{
+	text-align: center;
+}
+
+.contactTag
+{
+	text-align: center;
+}
+
+.contactButton
+{
+	color:green;
+}
+
 .directionButton
 {
 	height:95%;
