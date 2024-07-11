@@ -4,8 +4,7 @@ body {
   margin: 0px;
 }
 
-.header 
-{
+.header {
   text-align: center;
   background: #000000;
   color: white;
@@ -15,8 +14,7 @@ body {
   height: calc(100% - 70px);
 }
 
-#stickyNavigator
-{
+#stickyNavigator {
 	width: 100%;
 	text-align: center;
 	background-color: black;
@@ -29,28 +27,23 @@ body {
 	z-index:100;
 }
 
-#contact
-{
+#contact {
 	height:250px;
 }
 
-.contactHeader
-{
+.contactHeader{
 	text-align: center;
 }
 
-.contactTag
-{
+.contactTag{
 	text-align: center;
 }
 
-.contactButton
-{
+.contactButton{
 	color:green;
 }
 
-.directionButton
-{
+.directionButton{
 	height:95%;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -70,20 +63,17 @@ body {
     text-shadow: 0px 0px 30px lightblue, 0px 0px 30px lightblue, 0px 0px 30px lightblue, 0px 0px 30px lightblue;
 }
 
-.sticky 
-{
+.sticky {
   position: fixed;
   top: 0px;
   width: 100%;
 }
 
-.stickyBuffer 
-{
+.stickyBuffer {
   padding-top: 55px;
 }
 
-#footer
-{
+#footer {
 	width: 100%;
 	text-align: center;
 	background-color: black;
@@ -112,20 +102,17 @@ body {
 	animation-iteration-count: infinite;
 }
 
-@keyframes headshotAnimation 
-{
+@keyframes headshotAnimation {
   0%   {box-shadow: 0 0 75px white;}
-  50%  {box-shadow: 0 0 50px white;}
+  50%  {box-shadow: 0 0 45px white;}
   100% {box-shadow: 0 0 75px white;}
 }
 
 #firstGreeting {
 	width: 100%;
-
 }
 
-#positionTyper 
-{
+#positionTyper {
 
 }
 
@@ -148,6 +135,7 @@ body {
 	background-color: grey; 
 	padding: 20px; 
 }
+
 .row { 
 	height: 150px; 
 	margin-bottom: 20px; 
@@ -170,6 +158,7 @@ body {
 	background-color: yellow; 
 	float: left; 
 }
+
 .center { 
 	float: left; 
 	margin: 0 5%; 
@@ -196,7 +185,7 @@ body {
 }
 
 .contactButton:hover img {
-    -webkit-filter: invert(100%) !important;
+    -webkit-filter: invert(95%);
 }
 
 .contactRow {
