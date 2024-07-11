@@ -1,5 +1,5 @@
 body {
-  background-color: lightblue;
+  background-color: #FAF9F6;
   font-family: "Lucida Console", "Courier New", monospace;
   margin: 0px;
 }
@@ -130,5 +130,14 @@ body {
 
 .introP {
 	padding-bottom: 10px;
+}
+
+.projectSlider {
+	background-color: green;
+	margin-left: 60px;
+	margin-right: 60px;
+	margin-top: 20px;
+	margin-bottom: : 20px;
+	padding: 20px;
 }
 
