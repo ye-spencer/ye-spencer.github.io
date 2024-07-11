@@ -26,6 +26,7 @@ body {
 	border-bottom-color: grey;
 	border-bottom-width: 5px;
 	height:50px;
+	z-index:100;
 }
 
 #contact
@@ -139,5 +140,44 @@ body {
 	margin-top: 20px;
 	margin-bottom: : 20px;
 	padding: 20px;
+}
+
+#blogContainer { 
+	width: 80%; 
+	margin: auto; 
+	background-color: grey; 
+	padding: 20px; 
+}
+.row { 
+	height: 150px; 
+	margin-bottom: 20px; 
+	position: relative; 
+}
+
+.row div { 
+	height: 100%; 
+}
+
+.column-2 { 
+	width: 48%; 
+}
+
+.column-3 { 
+	width: 30%; 
+}
+
+.left { 
+	background-color: yellow; 
+	float: left; 
+}
+.center { 
+	float: left; 
+	margin: 0 5%; 
+	background-color: orange; 
+}
+
+.right { 
+	background-color: green; 
+	float: right; 
 }
 
