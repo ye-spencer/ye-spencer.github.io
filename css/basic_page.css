@@ -181,3 +181,32 @@ body {
 	float: right; 
 }
 
+.contactButtonImg {
+	width:70px;
+	height:70px;
+	border-width: 4px;
+	border-color: gray;
+}
+
+.contactButton {
+    width:70px;
+    height:70px;
+    border-width: 4px;
+    border-color: gray;
+}
+
+.contactButton:hover img {
+    -webkit-filter: invert(100%) !important;
+}
+
+.contactRow {
+    display: table;
+    border-spacing: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contactCol {
+    display: table-cell;
+}
+
