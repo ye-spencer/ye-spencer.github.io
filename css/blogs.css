@@ -1,12 +1,23 @@
 .blogTitle {
-	font-size: 40px;
-	color:red;
+	font-size: 55px;
+	text-align: center;
+	text-decoration: underline;
 }
 
-.editedLine {
-
+.mainSubtitle {
+	text-align: center;
+	font-size: 30px;
 }
 
 .lastUpdated {
+	text-align: center;
+	font-size: 15px;
+	color: #232b2b;
+}
 
+.blogParagraph {
+	font-size: 17px;
+	margin-left: 15%;
+	margin-right: 15%;
+	line-height: 1.2;
 }
