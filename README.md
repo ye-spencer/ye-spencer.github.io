@@ -4,9 +4,6 @@ Personal Website
   - For Projects
   - My Life
 
-One day I'll find out exactly why I have this
-
-man this is kinda fun
 
 Inspiration of Things to Add [May 8th, 2024]
  - Blog about things, experiments I try that demonstrate random knowledge that I have, and answering questions
@@ -15,3 +12,11 @@ Inspiration of Things to Add [May 8th, 2024]
  - projects
  - collection of videos
  - 
+
+TODO List
+ - organize css so the main site ones is one, and specifics for each page are separated out
+ - create css constants
+ - create project content and overall content
+ - explore SASS lessCSS
+ - make sure everything is adaptable and resizable
+ - fix headers since they roll to the middle
