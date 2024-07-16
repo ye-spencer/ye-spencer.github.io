@@ -193,7 +193,8 @@ body {
 }
 
 .projectName {
-
+	margin-top: 15px;
+	color: red;
 }
 
 .projectSkillsUsed {
@@ -204,15 +205,17 @@ body {
 	background-color: #808080;
 	margin-left: 60px;
 	margin-right: 60px;
-	margin-top: 20px;
-	margin-bottom: : 20px;
+	margin-top: 60px;
+	margin-bottom: 40px;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 10px;
+	padding-top: 0px;
 	padding-bottom: auto;
-	height: 125px;
-	border-width: 4px;
+	height: 175px;
+	border-width: 10px;
 	border-color: black;
+	border: solid;
+	box-shadow: 0 0 75px lightblue;
 }
 
 .projectName:link {
@@ -225,7 +228,12 @@ body {
 
 .projectPicture {
 	float: left;
-	height: 95%;
+	height: 100%;
 	width: auto;
+	margin-right: 30px;
+}
+
+.projectDescription {
+	padding-top: 15px;
 }
 
