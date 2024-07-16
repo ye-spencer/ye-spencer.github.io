@@ -19,4 +19,3 @@ TODO List
  - create project content and overall content
  - explore SASS lessCSS
  - make sure everything is adaptable and resizable
- - fix headers since they roll to the middle
