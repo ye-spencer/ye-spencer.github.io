@@ -145,18 +145,15 @@ body {
 }
 
 .left { 
-	background-color: yellow; 
 	float: left; 
 }
 
 .center { 
 	float: left; 
-	margin: 0 5%; 
-	background-color: orange; 
+	margin: 0 4%; 
 }
 
 .right { 
-	background-color: green; 
 	float: right; 
 }
 
@@ -236,5 +233,12 @@ body {
 
 .blogBox {
 	color : red;
+	background-color: lightgray;
+	box-shadow: 0 0 15px lightgray;
+	border-radius: 25px;
+	border-width: 3px;
+	border: solid;
+	border-color: black;
+
 }
 
