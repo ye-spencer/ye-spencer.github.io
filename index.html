@@ -79,7 +79,7 @@
 			<h2 id="blog" class="sectionHeader"> Blog </h2>
 			<div id="blogContainer">
 				<div class="row"> <!-- Rinse and Repeat: If we end up writing a lot we can turn it into a slider or smth-->
-			 		<div class="column-2 left" onclick="location.href = 'blogs/blog_template.html';">> Better Blog A </div>
+			 		<div class="column-2 left blogBox" onclick="location.href = 'blogs/blog_template.html';"> Better Blog A </div>
 					<div class="column-2 right"> Better Blog B </div>
 				</div>
 				<div class="row">
@@ -89,9 +89,10 @@
 				</div>
 			</div>
 		</div>
+		<div id="like_button_container"></div>
 		<div>
 			<h2 id="contact" class="sectionHeader"> Contact & More </h2>
-			<h5 class="contactTag"> I'd love to hear from you! I'm open to anything from coffee chats to business inquires</h4>
+			<h5 class="contactTag"> I'd love to hear from you! I'm open to anything from coffee chats to business inquires</h5>
 			<div class="contactRow">
 				<div class="contactCol">
 					<a href="mailto: sye15@jhu.edu" class="contactButton">
@@ -118,6 +119,9 @@
 		</div>
 		<script type="text/javascript" src="js/button_functions.js"></script>
 		<script type="text/javascript" src="js/sticky_header.js"></script>
+		<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+		<script src="js/react_test.js"></script>
 	</body>
 
 </html>
