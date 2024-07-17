@@ -1,6 +1,5 @@
-const e = React.createElement;
-
-class LikeButton extends React.Component {
+class LikeButton extends React.Component 
+{
   constructor(props) {
     super(props);
     this.state = { liked: false };
@@ -19,6 +18,18 @@ class LikeButton extends React.Component {
   }
 }
 
-const domContainer = document.querySelector('#like_button_container');
-const root = ReactDOM.createRoot(domContainer);
-root.render(e(LikeButton));
+// import React, { Component } from 'react'
+// import ReactDOM from 'react-dom'
+// import './index.css'
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <div className="App">
+//         <h1>Hello, React!</h1>
+//       </div>
+//     )
+//   }
+// }
+
+// ReactDOM.render(<App />, document.getElementById('footer'))

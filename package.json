@@ -1,0 +1,15 @@
+{
+  "name": "concerned-baby.github.io",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "TODO List\r  - organize css so the main site ones is one, and specifics for each page are separated out\r  - create css constants\r  - create project content and overall content\r  - explore SASS lessCSS\r  - make sure everything is adaptable and resizable\r  - make layout for blogss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "left-pad": "^1.3.0"
+  }
+}
