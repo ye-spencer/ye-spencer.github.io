@@ -27,9 +27,6 @@ body {
 	z-index:100;
 }
 
-#contact {
-	height:250px;
-}
 
 .sectionHeader{
 	text-align: center;
@@ -235,5 +232,9 @@ body {
 
 .projectDescription {
 	padding-top: 15px;
+}
+
+.blogBox {
+	color : red;
 }
 
