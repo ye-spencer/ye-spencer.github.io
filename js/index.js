@@ -1,4 +1,4 @@
-import { LikeButton } from 'react_test.js';
+import { LikeButton } from '/react_test.js';
 
 console.log("SDF");
 
