@@ -1,6 +1,6 @@
-console.log("Loading Version 0.0.1");
+console.log("Loading Version 0.0.2");
 
-const e = React.createElement;
+const createEle = React.createElement;
 
 class LikeButton extends React.Component 
 {
@@ -10,9 +10,9 @@ class LikeButton extends React.Component
 
   render() {
 
-    return e(
+    return createEle(
       'button',
-      { class: "testClass" },
+      { className: 'testClass' },
       'BooHoo'
     );
   }
@@ -20,7 +20,7 @@ class LikeButton extends React.Component
 
 function createProjectSlider ({ imgName, link, skillsUsed, description }) 
 {
-  return createElement(
+  return createEle(
     'h1',
     { className: 'greeting' },
     'Hello ',
