@@ -1,4 +1,4 @@
-console.log("Loading Version 0.0.5");
+console.log("Loading Version 0.0.6");
 
 const createEle = React.createElement;
 
@@ -20,7 +20,7 @@ function createProjectSlider ( imgName, link, projectName, skillsUsed, descripti
   return createEle(
     'div',
     { className: "projectSlider" },
-    createEle('img', {source: ("imgs/" + imgName), className = "projectPicture"}),
+    createEle('img', {src: ("imgs/" + imgName), className: "projectPicture"}),
     createEle('a', {href: link}, createEle('br', null), projectName),
     createEle('h5', {className: "projectSkillsUsed"}, skillsUsed),
     createEle('p', {className: "projectDescription"}, description)
