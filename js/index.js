@@ -1,4 +1,4 @@
-console.log("Loading Version 0.0.2");
+console.log("Loading Version 0.0.3");
 
 const createEle = React.createElement;
 
@@ -18,16 +18,17 @@ class LikeButton extends React.Component
   }
 }
 
-function createProjectSlider ({ imgName, link, skillsUsed, description }) 
-{
-  return createEle(
-    'h1',
-    { className: 'greeting' },
-    'Hello ',
-    createElement('i', null, name),
-    '. Welcome!'
-  );
-}
+// function createProjectSlider ({ imgName, link, projectName, skillsUsed, description }) 
+// {
+//   return createEle(
+//     'div',
+//     { className: "projectSlider" },
+//     createEle('img', {source: ("imgs/" + imgName), className = "projectPicture"}),
+//     createEle('a', {href: link}, createEle('br', null), projectName),
+//     createEle('h5', {className: "projectSkillsUsed"}, skillsUsed),
+//     createEle('p', {className: "projectDescription"}, description)
+//   );
+// }
 
 console.log("Successful Import");
 
