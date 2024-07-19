@@ -1,18 +1,21 @@
+console.log("Successful Loading Index v0.0.1");
+
+const e = React.createElement;
+
 class LikeButton extends React.Component 
 {
-  constructor(props) {
+  constructor(props) 
+  {
     super(props);
-    this.state = { liked: false };
+    console.log(props)
   }
 
-  render() {
-    if (this.state.liked) {
-      return 'You liked this.';
-    }
+  render() 
+  {
 
     return e(
       'button',
-      { onClick: () => this.setState({ liked: true }) },
+      { class: "testClass"}
       'Like'
     );
   }
@@ -20,7 +23,6 @@ class LikeButton extends React.Component
 
 console.log("Successful Import");
 
-const e = React.createElement;
 
 const domContainer = document.querySelector('#like_button_container');
 const root = ReactDOM.createRoot(domContainer);
