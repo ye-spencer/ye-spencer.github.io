@@ -1,4 +1,4 @@
-console.log("Loading Version 0.0.4");
+console.log("Loading Version 0.0.5");
 
 const createEle = React.createElement;
 
