@@ -1,21 +1,22 @@
-console.log("Successful Loading Index v0.0.1");
+console.log("Loading Version 0.0.1");
 
 const e = React.createElement;
 
 class LikeButton extends React.Component 
 {
-  constructor(props) 
-  {
+  constructor(props) {
     super(props);
-    console.log(props)
+    this.state = { liked: false };
   }
 
-  render() 
-  {
+  render() {
+    if (this.state.liked) {
+      return 'You liked this.';
+    }
 
     return e(
       'button',
-      { class: "testClass"}
+      { onClick: () => this.setState({ liked: true }) },
       'Like'
     );
   }
