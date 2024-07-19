@@ -6,20 +6,27 @@ class LikeButton extends React.Component
 {
   constructor(props) {
     super(props);
-    this.state = { liked: false };
   }
 
   render() {
-    if (this.state.liked) {
-      return 'You liked this.';
-    }
 
     return e(
       'button',
-      { onClick: () => this.setState({ liked: true }) },
-      'Like'
+      { class: "testClass" },
+      'BooHoo'
     );
   }
+}
+
+function createProjectSlider ({ imgName, link, skillsUsed, description }) 
+{
+  return createElement(
+    'h1',
+    { className: 'greeting' },
+    'Hello ',
+    createElement('i', null, name),
+    '. Welcome!'
+  );
 }
 
 console.log("Successful Import");
