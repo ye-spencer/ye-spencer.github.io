@@ -1,4 +1,4 @@
-console.log("Loading Version 0.0.3");
+console.log("Loading Version 0.0.4");
 
 const createEle = React.createElement;
 
@@ -35,6 +35,6 @@ console.log("Successful Import");
 
 const domContainer = document.querySelector('#like_button_container');
 const root = ReactDOM.createRoot(domContainer);
-root.render(e(LikeButton));
+root.render(createEle(LikeButton));
 
 console.log("Successful Display");
