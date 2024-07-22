@@ -137,11 +137,11 @@ body {
 }
 
 .column-2 { 
-	width: 48%; 
+	width: 46%; 
 }
 
 .column-3 { 
-	width: 30%; 
+	width: 28%; 
 }
 
 .left { 
@@ -232,13 +232,13 @@ body {
 }
 
 .blogBox {
-	color : green;
+	color : blue;
 	background-color: lightgray;
 	box-shadow: 0 0 15px lightgray;
 	border-radius: 25px;
 	border-width: 3px;
 	border: solid;
 	border-color: black;
-	padding-left: 10px;
+	padding-left: 2%;
 
 }
