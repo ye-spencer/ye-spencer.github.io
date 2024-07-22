@@ -1,4 +1,4 @@
-console.log("Loading Version 0.1.3");
+console.log("Loading Version 0.1.4");
 
 const createEle = React.createElement;
 
@@ -8,6 +8,10 @@ class projectSlider extends React.Component
   {
     super(props);
     console.log(this.state)
+    console.log(props)
+    this.state = {name: "Joes"}
+    console.log(this.state)
+    console.log(this.state.name)
   }
 
   render() 
