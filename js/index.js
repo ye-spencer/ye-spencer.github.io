@@ -9,7 +9,7 @@ class projectSlider extends React.Component
     super(props);
     console.log(this.state)
     console.log(props)
-    this.state = {name: "Joes"}
+    this.state = props
     console.log(this.state)
     console.log(this.state.name)
   }
