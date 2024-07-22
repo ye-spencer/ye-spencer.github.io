@@ -232,12 +232,13 @@ body {
 }
 
 .blogBox {
-	color : red;
+	color : green;
 	background-color: lightgray;
 	box-shadow: 0 0 15px lightgray;
 	border-radius: 25px;
 	border-width: 3px;
 	border: solid;
 	border-color: black;
+	padding-left: 10px;
 
 }
