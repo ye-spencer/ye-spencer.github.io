@@ -31,8 +31,10 @@ function createProjectSlider ( imgName, link, projectName, skillsUsed, descripti
 console.log("Successful Import");
 
 
-const domContainer = document.querySelector('#projectA'); // Find the Container to put it in
-const root = ReactDOM.createRoot(domContainer); // Create a React root to render in, the container is a DIV
-root.render(createEle(projectSlider, {img: "github.png", link: "../index.html", title: "This Website", skills: "HTML, CSS, JavaScript, React, jQuery", desc: "I designed and built this website completely from scratch. I had little understanding of frontend before this website, and a lot of the learning was through slowly learning"})); // render the elements
+const projectsDOM = document.querySelector('#projectA'); // Find the Container to put it in
+const projectsRoot = ReactDOM.createRoot(projectsDOM); // Create a React root to render in, the container is a DIV
+projectsRoot.render(
+  createEle(projectSlider, {img: "github.png", link: "../index.html", title: "This Website", skills: "HTML, CSS, JavaScript, React, jQuery", desc: "I designed and built this website completely from scratch. I had little understanding of frontend before this website, and a lot of the learning was through slowly learning"})
+  ); // render the elements
 
 console.log("Successful Display");
