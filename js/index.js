@@ -1,4 +1,4 @@
-console.log("Loading Version 0.2.0");
+console.log("Loading Version 0.2.1");
 
 const createEle = React.createElement;
 
@@ -54,7 +54,7 @@ function createProjectSlider ( imgName, link, projectName, skillsUsed, descripti
 console.log("Successful Import");
 
 
-const projectsDOM = document.querySelector('#projectA'); // Find the Container to put it in
+const projectsDOM = $("#projectA")[0]; // Find the Container to put it in
 const projectsRoot = ReactDOM.createRoot(projectsDOM); // Create a React root to render in, the container is a DIV
 projectsRoot.render(createEle(projectBoard, null)); // render the elements
 
