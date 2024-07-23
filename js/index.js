@@ -1,4 +1,4 @@
-console.log("Loading Version 0.4.0");
+console.log("Loading Version 0.4.1");
 
 const createEle = React.createElement;
 const blogTitles = ["BLOGTESTA", "BLOGTESTB", "BLOGTESTC", "BLOGTESTD", "BLOGTESTE"]
@@ -94,7 +94,7 @@ function createBlogBox (type, num)
   {
     classNames += "column-1"; // need to add as a class in css
   }
-  return createEle("div", {className: classNames}, createEle("h6", {className: "blogTitle", onclick: ("location.href = 'blogs/" + blogTitles[num] + ".html';")}, blogTitles[num]), createEle("p", {className: "blogTag"}, blogTags[num]));
+  return createEle("div", {className: classNames, onclick: ("location.href = 'blogs/" + blogTitles[num] + ".html';")}, createEle("h6", {className: "blogTitle"}, blogTitles[num]), createEle("p", {className: "blogTag"}, blogTags[num]));
 }
 
 function createRow(size, startingPoint)
