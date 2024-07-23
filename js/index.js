@@ -1,4 +1,4 @@
-console.log("Loading Version 0.3.2");
+console.log("Loading Version 0.3.3");
 
 const createEle = React.createElement;
 const blogTitles = ["BLOGTESTA", "BLOGTESTB", "BLOGTESTC", "BLOGTESTD", "BLOGTESTE"]
@@ -108,13 +108,13 @@ function createBlogBox (type, num)
   {
     classNames += "column-1"; // need to add as a class in css
   }
-  return createEle("div", {className: classNames}, blogTitles[num], blogTags[num]);
+  return createEle("div", {className: classNames}, blogTitles[num], blogTags[num]); //need to make beautiful and that's it
   //arr.push(createEle(blogBox, {type: j, title: blogTitles[i + j], desc: blogTags[i+j]}));
 }
 
 function createRow(size, startingPoint)
 {
-  return createEle("div", null, "Row of size: ", size, " starting at ", startingPoint);
+  //return createEle("div", null, "Row of size: ", size, " starting at ", startingPoint);
   if (size === 1)
   {
 
@@ -139,6 +139,7 @@ function createBlogBoard()
     rows.push(createRow(2, i));
     rows.push(createRow(3, i + 2));
   }
+
   let leftover = totalBlogCount % 5; // deal with the final 0-4 blog boxes
   if (leftover === 1)
   {
