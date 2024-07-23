@@ -1,7 +1,8 @@
-console.log("Loading Version 0.3.0");
+console.log("Loading Version 0.3.1");
 
 const createEle = React.createElement;
 const blogTitles = ["BLOGTESTA", "BLOGTESTB", "BLOGTESTC", "BLOGTESTD", "BLOGTESTE"]
+const blogTags = ["CSF", "Life", "Running", "C++, CSF", "None"]
 const totalBlogCount = blogTitles.length;
 
 class projectSlider extends React.Component 
@@ -85,17 +86,41 @@ function createBlogBox (type, title, description)
   return createEle("p", null, type, title, description);
 }
 
+function createRow(size, startingPoint)
+{
+  return createEle("div", null, "Row of size: ", size, " starting at ", startingPoint);
+}
+
 function createBlogBoard()
 {
-  let arr = [];
-  for (let i = 0; i < totalBlogCount; i += 5) 
+  let rows = [];
+  for (let i = 0; i < totalBlogCount; i += 5) // creating groupings of 5
   {
-    for (let j = 0; j < 5; j++)
-    {
-      arr.push(createEle(blogBox, {type: j, title: blogTitles[i + j], desc: "TEST DESC"}));
-    }
+    let j = 0;
+    rows.push(createRow(2, i));
+    rows.push(createRow(3, i + 2));
+    //arr.push(createEle(blogBox, {type: j, title: blogTitles[i + j], desc: blogTags[i+j]}));
   }
-  return createEle("div", null, arr);
+  let leftover = totalBlogCount % 5; // deal with the final 0-4 blog boxes
+  if (leftover === 1)
+  {
+    rows.push(createRow(1, totalBlogCount - 1));
+  }
+  else if (leftover === 2)
+  {
+    rows.push(createRow(2, totalBlogCount - 2));
+  }
+  else if (leftover === 3)
+  {
+    rows.push(createRow(3, totalBlogCount - 3));
+  }
+  else if (leftover === 4)
+  {
+    rows.push(createRow(2, totalBlogCount - 4));
+    rows.push(createRow(2, totalBlogCount - 2));
+  }
+
+  return createEle("div", null, rows);
 }
 
 console.log("Successful Import");
