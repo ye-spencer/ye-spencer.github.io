@@ -1,4 +1,4 @@
-console.log("Loading Version 0.3.3");
+console.log("Loading Version 0.4.0");
 
 const createEle = React.createElement;
 const blogTitles = ["BLOGTESTA", "BLOGTESTB", "BLOGTESTC", "BLOGTESTD", "BLOGTESTE"]
@@ -67,20 +67,6 @@ class blogBoard extends React.Component
   }
 }
 
-class blogBox extends React.Component
-{
-  constructor(props) 
-  {
-    super(props);
-    this.state = props;
-  }
-
-  render() 
-  {
-    return createBlogBox(this.state.type, this.state.title, this.state.desc);
-  }
-}
-
 function createBlogBox (type, num)
 {
   let classNames = "blogBox ";
@@ -108,13 +94,11 @@ function createBlogBox (type, num)
   {
     classNames += "column-1"; // need to add as a class in css
   }
-  return createEle("div", {className: classNames}, blogTitles[num], blogTags[num]); //need to make beautiful and that's it
-  //arr.push(createEle(blogBox, {type: j, title: blogTitles[i + j], desc: blogTags[i+j]}));
+  return createEle("div", {className: classNames}, createEle("h6", {className: "blogTitle", onclick: ("location.href = 'blogs/" + blogTitles[num] + ".html';")}, blogTitles[num]), createEle("p", {className: "blogTag"}, blogTags[num]);
 }
 
 function createRow(size, startingPoint)
 {
-  //return createEle("div", null, "Row of size: ", size, " starting at ", startingPoint);
   if (size === 1)
   {
 
@@ -171,7 +155,7 @@ projectsRoot.render(createEle(projectBoard, null)); // render the elements
 
 console.log("Successful Project");
 
-const blogsDOM = $("#testDiv")[0];
+const blogsDOM = $("#blogContainer")[0];
 const blogsRoot = ReactDOM.createRoot(blogsDOM);
 blogsRoot.render(createEle(blogBoard, null));
 

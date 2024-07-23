@@ -232,7 +232,6 @@ body {
 }
 
 .blogBox {
-	color : blue;
 	background-color: lightgray;
 	box-shadow: 0 0 15px lightgray;
 	border-radius: 25px;
@@ -241,5 +240,12 @@ body {
 	border-color: black;
 	padding-left: 2%;
 	padding-top: 4px;
+}
 
+.blogTitle {
+	color : green;
+}
+
+.blogTag {
+	color: purple;
 }
