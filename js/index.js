@@ -1,4 +1,4 @@
-console.log("Loading Version 0.3.1");
+console.log("Loading Version 0.3.2");
 
 const createEle = React.createElement;
 const blogTitles = ["BLOGTESTA", "BLOGTESTB", "BLOGTESTC", "BLOGTESTD", "BLOGTESTE"]
