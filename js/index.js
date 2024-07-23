@@ -81,14 +81,53 @@ class blogBox extends React.Component
   }
 }
 
-function createBlogBox (type, title, description)
+function createBlogBox (type, num)
 {
-  return createEle("p", null, type, title, description);
+  let classNames = "blogBox ";
+  if (type === 0)
+  {
+    classNames += "column-2 left";
+  }
+  else if (type === 1)
+  {
+    classNames += "column-2 right";
+  }
+  else if (type === 2)
+  {
+    classNames += "column-3 left";
+  }
+  else if (type === 3)
+  {
+    classNames += "column-3 center";
+  }
+  else if (type === 4)
+  {
+    classNames += "column-3 right";
+  }
+  else if (type === 10) // single box
+  {
+    classNames += "column-1"; // need to add as a class in css
+  }
+  return createEle("div", {className: classNames}, blogTitles[num], blogTags[num]);
+  //arr.push(createEle(blogBox, {type: j, title: blogTitles[i + j], desc: blogTags[i+j]}));
 }
 
 function createRow(size, startingPoint)
 {
   return createEle("div", null, "Row of size: ", size, " starting at ", startingPoint);
+  if (size === 1)
+  {
+
+  }
+  else if (size === 2)
+  {
+    return createEle("div", {className: "row"}, createBlogBox(0, startingPoint), createBlogBox(1, startingPoint + 1));
+  }
+  else if (size === 3)
+  {
+    return createEle("div", {className: "row"}, createBlogBox(2, startingPoint), createBlogBox(3, startingPoint + 1), createBlogBox(4, startingPoint + 2));
+  }
+  return "ERROR";
 }
 
 function createBlogBoard()
@@ -99,7 +138,6 @@ function createBlogBoard()
     let j = 0;
     rows.push(createRow(2, i));
     rows.push(createRow(3, i + 2));
-    //arr.push(createEle(blogBox, {type: j, title: blogTitles[i + j], desc: blogTags[i+j]}));
   }
   let leftover = totalBlogCount % 5; // deal with the final 0-4 blog boxes
   if (leftover === 1)
