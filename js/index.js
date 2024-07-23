@@ -1,7 +1,8 @@
-console.log("Loading Version 0.2.1");
+console.log("Loading Version 0.3.0");
 
 const createEle = React.createElement;
-const totalBlogCount = 10;
+const blogTitles = ["BLOGTESTA", "BLOGTESTB", "BLOGTESTC", "BLOGTESTD", "BLOGTESTE"]
+const totalBlogCount = blogTitles.length;
 
 class projectSlider extends React.Component 
 {
@@ -65,12 +66,34 @@ class blogBoard extends React.Component
   }
 }
 
+class blogBox extends React.Component
+{
+  constructor(props) 
+  {
+    super(props);
+    this.state = props;
+  }
+
+  render() 
+  {
+    return createBlogBox(this.state.type, this.state.title, this.state.desc);
+  }
+}
+
+function createBlogBox (type, title, description)
+{
+  return createEle("p", null, type, title, description);
+}
+
 function createBlogBoard()
 {
   let arr = [];
-  for (let i = 0; i < totalBlogCount; i++) 
+  for (let i = 0; i < totalBlogCount; i += 5) 
   {
-    arr.push(createEle("p", null, "TEST"));
+    for (let j = 0; j < 5; j++)
+    {
+      arr.push(createEle(blogBox, {type: j, title: blogTitles[i + j], desc: "TEST DESC"}));
+    }
   }
   return createEle("div", null, arr);
 }
