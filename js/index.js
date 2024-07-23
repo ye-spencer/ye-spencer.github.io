@@ -94,7 +94,7 @@ function createBlogBox (type, num)
   {
     classNames += "column-1"; // need to add as a class in css
   }
-  return createEle("div", {className: classNames}, createEle("h6", {className: "blogTitle", onclick: ("location.href = 'blogs/" + blogTitles[num] + ".html';")}, blogTitles[num]), createEle("p", {className: "blogTag"}, blogTags[num]);
+  return createEle("div", {className: classNames}, createEle("h6", {className: "blogTitle", onclick: ("location.href = 'blogs/" + blogTitles[num] + ".html';")}, blogTitles[num]), createEle("p", {className: "blogTag"}, blogTags[num]));
 }
 
 function createRow(size, startingPoint)
