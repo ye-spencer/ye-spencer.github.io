@@ -1,6 +1,7 @@
 console.log("Loading Version 0.2.1");
 
 const createEle = React.createElement;
+const totalBlogCount = 10;
 
 class projectSlider extends React.Component 
 {
@@ -29,7 +30,7 @@ class projectBoard extends React.Component
   }
 }
 
-function createProjectBoard()
+function createProjectBoard() // can replace later with a more clean implementation, such as reading from a file
 {
   return createEle(
     'div',
@@ -51,6 +52,29 @@ function createProjectSlider ( imgName, link, projectName, skillsUsed, descripti
   );
 }
 
+class blogBoard extends React.Component
+{
+  constructor(props)
+  {
+    super(props);
+  }
+
+  render()
+  {
+    return createBlogBoard();
+  }
+}
+
+function createBlogBoard()
+{
+  let arr = [];
+  for (let i = 0; i < totalBlogCount; i++) 
+  {
+    arr.push(createEle("p", null, "TEST"));
+  }
+  return createEle("div", null, arr);
+}
+
 console.log("Successful Import");
 
 
@@ -58,4 +82,10 @@ const projectsDOM = $("#projectA")[0]; // Find the Container to put it in
 const projectsRoot = ReactDOM.createRoot(projectsDOM); // Create a React root to render in, the container is a DIV
 projectsRoot.render(createEle(projectBoard, null)); // render the elements
 
-console.log("Successful Display");
+console.log("Successful Project");
+
+const blogsDOM = $("#testDiv")[0];
+const blogsRoot = ReactDOM.createRoot(blogsDOM);
+blogsRoot.render(createEle(blogBoard, null));
+
+console.log("Successful Blogs");
