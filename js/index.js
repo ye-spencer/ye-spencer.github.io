@@ -1,7 +1,7 @@
-console.log("Loading Version 0.4.4");
+console.log("Loading Version 0.5.0");
 
 const createEle = React.createElement;
-const blogTitles = ["BLOGTESTA", "BLOGTESTB", "BLOGTESTC", "BLOGTESTD", "BLOGTESTE"]
+const blogTitles = ["TESTBLOGA", "TESTBLOGB", "TESTBLOGC", "TESTBLOGD", "TESTBLOGE"]
 const blogTags = ["CSF", "Life", "Running", "C++, CSF", "None"]
 const totalBlogCount = blogTitles.length;
 
