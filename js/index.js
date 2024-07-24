@@ -92,15 +92,13 @@ function createBlogBox (type, num)
   }
   else if (type === 10) // single box
   {
-    classNames += "column-1"; // need to add as a class in css
+    classNames += "column-1";
   }
   return createEle("div", {className: classNames, onClick: () => {window.open(("blogs/" + blogTitles[num] + ".html"), '_blank');}}, createEle("h6", {className: "blogTitle"}, blogTitles[num]), createEle("p", {className: "blogTag"}, blogTags[num]));
 }
 
 function createRow(size, startingPoint)
 {
-  console.log("Size: ");
-  console.log(size)
   if (size === 1)
   {
     return createEle("div", {className: "row"}, createBlogBox(10, startingPoint));
