@@ -1,8 +1,8 @@
 console.log("Loading Version 0.5.0");
 
 const createEle = React.createElement;
-const blogTitles = ["TESTBLOGA", "TESTBLOGB", "TESTBLOGC", "TESTBLOGD", "TESTBLOGE"]
-const blogTags = ["CSF", "Life", "Running", "C++, CSF", "None"]
+const blogTitles = ["TESTBLOGA", "TESTBLOGB", "TESTBLOGC", "TESTBLOGD", "TESTBLOGE", "TESTBLOGF"]
+const blogTags = ["CSF", "Life", "Running", "C++, CSF", "None", "None"]
 const totalBlogCount = blogTitles.length;
 
 class projectSlider extends React.Component 
@@ -94,7 +94,6 @@ function createBlogBox (type, num)
   {
     classNames += "column-1"; // need to add as a class in css
   }
-  //onClick: () => {console.log('clicked')}
   return createEle("div", {className: classNames, onClick: () => {window.open(("blogs/" + blogTitles[num] + ".html"), '_blank');}}, createEle("h6", {className: "blogTitle"}, blogTitles[num]), createEle("p", {className: "blogTag"}, blogTags[num]));
 }
 

@@ -136,6 +136,10 @@ body {
 	height: 100%; 
 }
 
+.column-1 {
+	width: 96%;
+}
+
 .column-2 { 
 	width: 46%; 
 }
@@ -243,12 +247,12 @@ body {
 }
 
 .blogTitle {
-	color : green;
+	color : black;
 	font-size: 25px;
 }
 
 .blogTag {
-	color: purple;
+	color: grey;
 	position: absolute;
 	bottom: 10px;
 }
