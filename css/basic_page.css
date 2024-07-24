@@ -256,3 +256,8 @@ body {
 	position: absolute;
 	bottom: 10px;
 }
+
+.sectionSubtitle {
+	text-align: center;
+	font-size: 18px;
+}
