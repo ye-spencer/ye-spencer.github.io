@@ -244,8 +244,11 @@ body {
 
 .blogTitle {
 	color : green;
+	font-size: 25px;
 }
 
 .blogTag {
 	color: purple;
+	position: absolute;
+	bottom: 10px;
 }
