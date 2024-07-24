@@ -99,9 +99,11 @@ function createBlogBox (type, num)
 
 function createRow(size, startingPoint)
 {
+  console.log("Size: ");
+  console.log(size)
   if (size === 1)
   {
-
+    return createEle("div", {className: "row"}, createBlogBox(10, startingPoint));
   }
   else if (size === 2)
   {
