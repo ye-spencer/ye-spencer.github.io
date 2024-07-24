@@ -128,23 +128,19 @@ function createBlogBoard()
   if (leftover === 1)
   {
     rows.push(createRow(1, totalBlogCount - 1));
-    console.log(1);
   }
   else if (leftover === 2)
   {
     rows.push(createRow(2, totalBlogCount - 2));
-    console.log(2);
   }
   else if (leftover === 3)
   {
     rows.push(createRow(3, totalBlogCount - 3));
-    console.log(3);
   }
   else if (leftover === 4)
   {
     rows.push(createRow(2, totalBlogCount - 4));
     rows.push(createRow(2, totalBlogCount - 2));
-    console.log(4);
   }
 
   return createEle("div", null, rows);
