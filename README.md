@@ -1,7 +1,9 @@
 # Concerned-Baby.github.io
 
 TODO List
- - create project content and overall content
+ - make computing blogs
+ - make the blogs specifc for my about me
+ - possibly add descriptions for each of the sections
 
 
 To explore:
