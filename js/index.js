@@ -1,8 +1,8 @@
-console.log("Loading Version 0.5.1");
+console.log("Loading Version 0.5.2");
 
 const createEle = React.createElement;
-const blogTitles = ["TESTBLOGA", "TESTBLOGB", "TESTBLOGC", "TESTBLOGD", "TESTBLOGE", "TESTBLOGF"]
-const blogTags = ["CSF", "Life", "Running", "C++, CSF", "None", "None"]
+const blogTitles = ["Coming Soon"]
+const blogTags = ["N/A"]
 const totalBlogCount = blogTitles.length;
 
 class projectSlider extends React.Component 
@@ -38,8 +38,9 @@ function createProjectBoard() // can replace later with a more clean implementat
     'div',
     null,
     createEle(projectSlider, {img: "github.png", link: "../index.html", title: "This Website", skills: "HTML, CSS, JavaScript, React, jQuery", desc: "I designed and built this website completely from scratch. I had little understanding of frontend before this website, and a lot of the learning was through slowly learning"}),
-    createEle(projectSlider, {img: "github.png", link: "../index.html", title: "Test", skills: "HTML, CSS, JavaScript, React, jQuery", desc: "I designed and built this website completely from scratch. I had little understanding of frontend before this website, and a lot of the learning was through slowly learning"}),
-    createEle(projectSlider, {img: "github.png", link: "../index.html", title: "Test", skills: "HTML, CSS, JavaScript, React, jQuery", desc: "I designed and built this website completely from scratch. I had little understanding of frontend before this website, and a lot of the learning was through slowly learning"}))
+    createEle(projectSlider, {img: "playingcards.png", link: "https://github.com/ye-spencer/24-Game-Solver", title: "24 Game Solver", skills: "Python, Selenium", desc: "This project was originally designed to determine what percentage of hands were solvable in the card game '24'. It has since progressed into a solver for the game 4nums.com"}),
+    createEle(projectSlider, {img: "running.png", link: "https://github.com/ye-spencer/PR-Predictor", title: "PR Predictor", skills: "N/A", desc: "This project focuses on determining the likelyhood for a track runner to run a Personal Record (PR) based on their previous performace conditions"}),
+    createEle(projectSlider, {img: "california.png", link: "https://github.com/ye-spencer/California-HS-Data-Project", title: "California High School Performance", skills: "SQL, R", desc: "This project aims to determine which high schools in California are the most successful, and what factors lead to those success"}))
 }
 
 function createProjectSlider ( imgName, link, projectName, skillsUsed, description ) 
