@@ -95,7 +95,7 @@ function createBlogBox (type, num)
   {
     classNames += "column-1";
   }
-  return createEle("div", {className: classNames, onClick: () => {window.open(("blogs/" + blogTitles[num] + ".html"), '_blank');}}, createEle("h6", {className: "blogTitle"}, blogTitles[num]), createEle("p", {className: "blogTag"}, blogTags[num]));
+  return createEle("div", {className: classNames, onClick: () => {window.open(("blogs/" + blogTitles[num] + ".html"), '_blank');}}, createEle("h6", {className: "blogTitle"}, blogTitles[num]), createEle("p", {className: "blogTag"}, "Tags: " + blogTags[num]));
 }
 
 function createRow(size, startingPoint)
