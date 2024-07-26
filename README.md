@@ -12,3 +12,4 @@ To explore:
  - organize css so the main site ones is one, and specifics for each page are separated out
  - create css constants
  - connect blogs somehow to https://hashnode.com
+ - add a lot of new animations for everything
