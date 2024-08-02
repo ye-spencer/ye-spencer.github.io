@@ -8,18 +8,6 @@
   height: calc(100% - 70px);
 }
 
-#stickyNavigator {
-	width: 100%;
-	text-align: center;
-	background-color: black;
-	padding-top: 10px;
-	padding-bottom: 0px;
-	border-bottom: solid;
-	border-bottom-color: grey;
-	border-bottom-width: 5px;
-	height:50px;
-	z-index:100;
-}
 
 
 .sectionHeader {
