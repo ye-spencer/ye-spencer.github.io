@@ -6,7 +6,7 @@
 
 .mainSubtitle {
 	text-align: center;
-	font-size: 30px;
+	font-size: 28px;
 }
 
 .lastUpdated {
@@ -15,9 +15,15 @@
 	color: #232b2b;
 }
 
+.blogSectionHeader {
+	text-align: center;
+	font-size: 40px;
+}
+
 .blogParagraph {
-	font-size: 17px;
+	font-size: 18px;
 	margin-left: 26%;
 	margin-right: 26%;
-	line-height: 1.2;
+	line-height: 1.4;
+	white-space: pre-line;
 }
