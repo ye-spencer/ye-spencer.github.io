@@ -8,8 +8,6 @@
   height: calc(100% - 70px);
 }
 
-
-
 .sectionHeader {
 	text-align: center;
 	font-size: 42px;
@@ -216,6 +214,7 @@
 
 #positionTyper {
   font-size: 24px;
+  font-family: "Monaco";
   animation: slideOut 1s forwards;
 }
 
