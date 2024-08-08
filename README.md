@@ -13,3 +13,4 @@ To explore:
  - create css constants
  - connect blogs somehow to https://hashnode.com
  - add a lot of new animations for everything
+ - just make everything cleaner
