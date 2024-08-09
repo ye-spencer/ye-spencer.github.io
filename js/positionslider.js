@@ -1,4 +1,4 @@
-const positions = ["Technical Founder @ Kalea Studio", "SWE @ Piotech Inc.", "Former Researcher @ ASDRP"];
+const positions = ["Founding Engineer @ Kalea Studio", "SWE @ Piotech Inc.", "Former Researcher @ ASDRP"];
 let currentIndex = 0;
 
 const slider = $("#positionTyper")[0];
