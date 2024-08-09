@@ -50,7 +50,7 @@ function createProjectSlider ( imgName, link, projectName, skillsUsed, descripti
     'div',
     { className: "projectSlider" },
     createEle('img', {src: ("imgs/" + imgName), alt:imgName, className: "projectPicture"}),
-    createEle('a', {href: link}, createEle('br', null), projectName),
+    createEle('a', {href: link, target: "_blank"}, createEle('br', null), projectName),
     createEle('h5', {className: "projectSkillsUsed"}, skillsUsed),
     createEle('p', {className: "projectDescription"}, description)
   );
