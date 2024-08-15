@@ -1,8 +1,8 @@
 console.log("Loading Version 0.5.2");
 
 const createEle = React.createElement;
-const blogTitles = ["How To Play 24", "Bucket List", "Life Mission Statement"]
-const blogTags = ["Games", "Life", "Life"]
+const blogTitles = ["How To Play 24", "Bucket List", "Life Mission Statement", "Top 7 Photos 2023-2024"]
+const blogTags = ["Games", "Life", "Life", "Life"]
 const totalBlogCount = blogTitles.length;
 
 class projectSlider extends React.Component 
