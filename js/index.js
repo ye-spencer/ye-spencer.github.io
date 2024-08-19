@@ -1,4 +1,4 @@
-console.log("Loading Version 0.5.2");
+console.log("Loading Version 0.6.0");
 
 const createEle = React.createElement;
 const blogTitles = ["How To Play 24", "Bucket List", "Life Mission Statement", "Top 7 Photos 2023-2024"]
