@@ -1,5 +1,3 @@
-console.log("Loading Version 0.6.0");
-
 const createEle = React.createElement;
 const blogTitles = ["How To Play 24", "Bucket List", "Life Mission Statement", "Top 7 Photos 2023-2024"]
 const blogTags = ["Games", "Life", "Life", "Life"]
@@ -152,17 +150,11 @@ function createBlogBoard()
   return createEle("div", null, rows);
 }
 
-console.log("Successful Import");
-
 
 const projectsDOM = $("#projectA")[0]; // Find the Container to put it in
 const projectsRoot = ReactDOM.createRoot(projectsDOM); // Create a React root to render in, the container is a DIV
 projectsRoot.render(createEle(projectBoard, null)); // render the elements
 
-console.log("Successful Project");
-
 const blogsDOM = $("#blogContainer")[0];
 const blogsRoot = ReactDOM.createRoot(blogsDOM);
 blogsRoot.render(createEle(blogBoard, null));
-
-console.log("Successful Blogs");
